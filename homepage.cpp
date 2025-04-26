@@ -5,10 +5,13 @@ HomePage::HomePage(QWidget *parent) : QWidget(parent) {
     layout->setContentsMargins(50, 100, 50, 50);
     layout->setSpacing(30);
 
-    QLabel *title = new QLabel("Snake and Ladder");
-    title->setAlignment(Qt::AlignCenter);
-    title->setStyleSheet("font-size: 24px; font-weight: bold; color: white;");
+    // Logo image
+    QLabel *logoLabel = new QLabel(this);
+    QPixmap logoPixmap(":/assets/logo.png");  // Ensure this is in your .qrc
+    logoLabel->setPixmap(logoPixmap.scaled(250, 100, Qt::KeepAspectRatio, Qt::SmoothTransformation));
+    logoLabel->setAlignment(Qt::AlignCenter);
 
+    // Player count slider
     playerSlider = new QSlider(Qt::Horizontal);
     playerSlider->setRange(2, 4);
     playerSlider->setValue(2);
@@ -16,12 +19,25 @@ HomePage::HomePage(QWidget *parent) : QWidget(parent) {
     playerCountLabel = new QLabel("Players: 2");
     playerCountLabel->setStyleSheet("color: white;");
 
-    startButton = new QPushButton("Start Game");
+    // Start button styled with image
+    startButton = new QPushButton();
+    startButton->setFixedSize(200, 80);
+    startButton->setStyleSheet(
+        "QPushButton {"
+        "border: none;"
+        "background-image: url(:/assets/start_button.png);"
+        "background-repeat: no-repeat;"
+        "background-position: center;"
+        "}"
+        "QPushButton:hover {"
+        "opacity: 0.8;"
+        "}"
+        );
 
-    layout->addWidget(title);
+    layout->addWidget(logoLabel);
     layout->addWidget(playerSlider);
     layout->addWidget(playerCountLabel);
-    layout->addWidget(startButton);
+    layout->addWidget(startButton, 0, Qt::AlignCenter);
 }
 
 QSlider* HomePage::getSlider() const {
