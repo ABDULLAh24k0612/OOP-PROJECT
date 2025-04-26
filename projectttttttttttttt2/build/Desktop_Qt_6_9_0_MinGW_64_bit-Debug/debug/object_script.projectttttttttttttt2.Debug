@@ -1,0 +1,13 @@
+debug/board.o
+debug/clickablelabel.o
+debug/dice.o
+debug/gamepage.o
+debug/homepage.o
+debug/main.o
+debug/mainwindow.o
+debug/player.o
+debug/qrc_resources.o
+debug/moc_clickablelabel.o
+debug/moc_gamepage.o
+debug/moc_homepage.o
+debug/moc_mainwindow.o

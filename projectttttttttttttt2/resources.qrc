@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>assets/background.png</file>
+        <file>assets/background1.png</file>
+        <file>assets/blue.png</file>
+        <file>assets/board.png</file>
+        <file>assets/green.png</file>
+        <file>assets/logo.png</file>
+        <file>assets/player1.png</file>
+        <file>assets/player2.png</file>
+        <file>assets/player3.png</file>
+        <file>assets/player4.png</file>
+        <file>assets/purple.png</file>
+        <file>assets/red.png</file>
+        <file>assets/start.png</file>
+        <file>assets/1-6/1.png</file>
+        <file>assets/1-6/2.png</file>
+        <file>assets/1-6/3.png</file>
+        <file>assets/1-6/4.png</file>
+        <file>assets/1-6/5.png</file>
+        <file>assets/1-6/6.png</file>
+        <file>assets/start_hover.png</file>
+    </qresource>
+</RCC>

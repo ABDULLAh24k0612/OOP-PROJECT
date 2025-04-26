@@ -1,0 +1,13 @@
+release/board.o
+release/clickablelabel.o
+release/dice.o
+release/gamepage.o
+release/homepage.o
+release/main.o
+release/mainwindow.o
+release/player.o
+release/qrc_resources.o
+release/moc_clickablelabel.o
+release/moc_gamepage.o
+release/moc_homepage.o
+release/moc_mainwindow.o
